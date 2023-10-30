@@ -43,7 +43,7 @@ The images of the five channels u, g, r, i, and z are cropped into the form of $
 
 1. TrainingDatasets.csv (4644 Training Datasets of our model)
 
-2. ### OutlierTestI.csv (307 Quasars from DESI and PANSSTARS quasar surveys)
+2. OutlierTestI.csv (307 Quasars from DESI and PANSSTARS quasar surveys)
 
 3. OutlierTestII:  OutlierTestDatasetII(Mag).csv: 82,415 quasar candidates with complete magnitude in u,g,r,i,z.
 
