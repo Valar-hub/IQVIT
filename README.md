@@ -48,7 +48,7 @@ The images of the five channels u, g, r, i, and z are cropped into the form of $
 
 1. DataSets1 (4644 Training Datasets of our model)
 2. OutlierTestDataset1 (307 Quasars from DESI and PANSSTARS quasar surveys)
-3. OutlierTestDataset2 ()
+3. OutlierTestDataset2 (It will be available and uploaded in public cloud)
 
 ## DatasetsCatalog
 
@@ -86,7 +86,9 @@ python evaluate_model.py --model=VIT --weights=PVQNet.pth --data-path=../DataSet
 
 For the 83,256 candidate source images contained in OutlierTestDatasetII, we only provide catalog, not all *.mat images. This is due to their large size and we are considering uploading them to a public cloud later.
 
+Operating system: Linux version 5.15.0-86-generic (buildd@lcy02-amd64-086) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38)
 
+GPU: GeForce RTX™ 4080
 
 
 
