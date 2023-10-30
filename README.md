@@ -5,7 +5,6 @@
 - [Datasets Introduction](#datasets-introduction)
   * [Available Datasets](#available-datasets)
   * [DatasetsCatalog](#datasetscatalog)
-    + [OutlierTestI.csv (307 Quasars from DESI and PANSSTARS quasar surveys)](#outliertesticsv--307-quasars-from-desi-and-pansstars-quasar-surveys-)
 - [How To Run The code](#how-to-run-the-code)
 
 
@@ -37,7 +36,7 @@ The images of the five channels u, g, r, i, and z are cropped into the form of $
 
 1. DataSets1 (4644 Training Datasets of our model)
 2. OutlierTestDataset1 (307 Quasars from DESI and PANSSTARS quasar surveys)
-3. OutlierTestDataset2 ()
+3. OutlierTestDataset2 (83,256 Quasar Candidates With ZWARNING=4 and SDSS_PIPILINE_Z in (1,5))
 
 ## DatasetsCatalog
 
