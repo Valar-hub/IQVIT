@@ -17,7 +17,11 @@ PVQNet is a neural network for finding high-redshift quasars (z>5) through photo
 
 ## How to Install
 
-The python version of our code is python 3.9.13. Install the relevant package dependencies by 'pip install requirements.txt'. 
+The python version of our code is python 3.9.13. Install the relevant package dependencies by:
+```
+pip install requirements.txt
+```
+. 
 
 # Repository Structure
 
