@@ -1,4 +1,4 @@
-- [photometric vision quasar network (PVQNet)](#photometric-vision-quasar-network--pvqnet-)
+- [Photometric Vision Quasar Network (PVQNet)](#photometric-vision-quasar-network--pvqnet-)
   * [Ussage](#ussage)
   * [How to Install](#how-to-install)
 - [Repository Structure](#repository-structure)
@@ -17,7 +17,7 @@
 
 
 
-# photometric vision quasar network (PVQNet)
+# Photometric Vision Quasar Network (PVQNet)
 
 ## Ussage
 
