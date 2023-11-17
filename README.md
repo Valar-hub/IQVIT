@@ -63,7 +63,7 @@ The images of the five channels u, g, r, i, and z are cropped into the form of $
 
 
 # How To Run The code
-
+PVQNet.pth is the pretrained weight file of our model. 
 
 
 ## Training the model
