@@ -1,6 +1,5 @@
 import torch
 from torch import nn
-from ImprovedVitModel import vit_demo
 class MixedInceptionModuleBlock(nn.Module):
     def __init__(self,inp,oup,use_5x5_conv=False):
         super().__init__()

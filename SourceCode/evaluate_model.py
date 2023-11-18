@@ -3,8 +3,6 @@ import torch
 import os
 import numpy as np
 from torch import nn
-from model import mobilevit_diy
-from ImprovedVitModel import vit_demo
 from fitsFolderV1 import get_path_fits_folder
 from tqdm import tqdm
 from VGG import VGG_diy 
@@ -82,7 +80,7 @@ def main(args):
 
     tensor = torch.tensor([[0, 0],
                        [0, 0]])
-    for thresh in np.arange(0.92,0.95,0.5):
+    for thresh in np.arange(0.5,0.65,0.5):
         result=pd.DataFrame()
         print(thresh)
         b=[]
@@ -157,21 +155,21 @@ def main(args):
                if i in indices:
                   b.append(pathes[i].split('/')[-1].split('_')[0])
                   new_row = pd.DataFrame([['b'+pathes[i].split('/')[-1].split('_')[0], float(res1[i,1])]], columns=['SPECOBJID', 'CONFIDENCE'])
-                  result=result.append(new_row, ignore_index=True)
-                  print(pathes[i].split('/')[-1].split('_')[0])
-                  print(res1[i,1])
+                  result=pd.concat([result,new_row])
+                  #print(pathes[i].split('/')[-1].split('_')[0])
+                  #print(res1[i,1])
                     
                   
                else:
                   c.append(test_data_set.imgs[i][0].split('/')[-1].split('_')[0])
-        print(len(b))
+        #print(len(b))
         with open('spec.txt', "w") as file:
             for item in b:
                 file.write("%s\n" % item)
 
         np.savetxt('RES.txt',RES)
         #print(len(c))
-        print(tensor)
+        #print(tensor)
             #print(get_confusion_matrix(res,label)[0])
             #print(len(c))
         #print(tensor)

@@ -12,7 +12,7 @@ from torchvision import transforms
 from PVQNet import vit_demo
 from VGG import VGG_diy
 from deit import deit_tiny_patch16_LS
-from fitsFolderV1 import get_fits_folder,get_purify_fits_folder
+from fitsFolderV1 import get_purify_fits_folder
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from utils import read_split_data, plot_data_loader_image
 from multi_train_utils.distributed_utils import init_distributed_mode, dist, cleanup
@@ -48,10 +48,9 @@ def main(args):
     # 实例化训练数据集
     if args.use_mixup==True:
         train_data_set = get_purify_fits_folder(images_path+'/train/')
-      #  train_data_set = MixupDataset(train_data_set,alpha=0.2)
 
     else:
-        train_data_set = get_fits_folder(images_path+'/train/')
+        train_data_set = get_purify_fits_folder(images_path+'/train/')
      
     # 实例化验证数据集
     val_data_set = get_purify_fits_folder(images_path+'/val/')
