@@ -48,7 +48,7 @@ The images of the five channels u, g, r, i, and z are cropped into the form of $
 
 1. DataSets1 (4644 Training Datasets of our model)
 2. OutlierTestDataset1 (307 Quasars from DESI and PANSSTARS quasar surveys)
-3. OutlierTestDataset2 (It will be available and uploaded in public cloud)
+3. OutlierTestDataset2 (It was available and uploaded in public cloud URL:'https://pan.baidu.com/s/1gyBUEpX9vMc6nXi0wL9Bxg' , Access Code：'1234', Size above 10GB and in the form of *.mat)
 
 ## DatasetsCatalog
 
